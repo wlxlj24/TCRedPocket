@@ -21,7 +21,9 @@
 }
 
 - (IBAction)pushToRedPocketVC:(id)sender {
-    [self.navigationController pushViewController:[TCRedPocketVC new] animated:YES];
+    TCRedPocketVC *vc = [TCRedPocketVC new];
+    vc.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

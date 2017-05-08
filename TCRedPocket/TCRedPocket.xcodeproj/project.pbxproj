@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		55A9E5EFC0C8728F19DB2337 /* libPods-TCRedPocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 714ECD545AE4426F135A3A91 /* libPods-TCRedPocket.a */; };
+		9649961E1EC03BA2007F81E3 /* TCRedPocketTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9649961D1EC03BA2007F81E3 /* TCRedPocketTopView.m */; };
+		964996211EC03BAF007F81E3 /* TCRedPocketFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 964996201EC03BAF007F81E3 /* TCRedPocketFooterView.m */; };
+		964996241EC0610F007F81E3 /* TXScrollLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 964996231EC0610F007F81E3 /* TXScrollLabelView.m */; };
+		964996271EC0611A007F81E3 /* UIView+TXFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 964996261EC0611A007F81E3 /* UIView+TXFrame.m */; };
 		96D1316A1EBFFE3700B3A575 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D131691EBFFE3700B3A575 /* main.m */; };
 		96D1316D1EBFFE3700B3A575 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D1316C1EBFFE3700B3A575 /* AppDelegate.m */; };
 		96D131701EBFFE3700B3A575 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D1316F1EBFFE3700B3A575 /* ViewController.m */; };
@@ -16,12 +20,23 @@
 		96D131781EBFFE3700B3A575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96D131761EBFFE3700B3A575 /* LaunchScreen.storyboard */; };
 		96D131831EBFFF3000B3A575 /* TCRedPocketVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D131821EBFFF3000B3A575 /* TCRedPocketVC.m */; };
 		96D131861EBFFFAA00B3A575 /* UIViewController+tc_HideNavgationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D131851EBFFFAA00B3A575 /* UIViewController+tc_HideNavgationBar.m */; };
+		96D131891EC003AD00B3A575 /* TCRedListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D131881EC003AD00B3A575 /* TCRedListView.m */; };
+		96D1318C1EC005FC00B3A575 /* TCRedPocketDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D1318B1EC005FC00B3A575 /* TCRedPocketDetailView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63710C836A0B7A243A01C5B5 /* Pods-TCRedPocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCRedPocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCRedPocket/Pods-TCRedPocket.release.xcconfig"; sourceTree = "<group>"; };
 		714ECD545AE4426F135A3A91 /* libPods-TCRedPocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCRedPocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		932D8E608DFC5F2FB3CCFA78 /* Pods-TCRedPocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCRedPocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCRedPocket/Pods-TCRedPocket.debug.xcconfig"; sourceTree = "<group>"; };
+		9649961C1EC03BA2007F81E3 /* TCRedPocketTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRedPocketTopView.h; sourceTree = "<group>"; };
+		9649961D1EC03BA2007F81E3 /* TCRedPocketTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRedPocketTopView.m; sourceTree = "<group>"; };
+		9649961F1EC03BAF007F81E3 /* TCRedPocketFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRedPocketFooterView.h; sourceTree = "<group>"; };
+		964996201EC03BAF007F81E3 /* TCRedPocketFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRedPocketFooterView.m; sourceTree = "<group>"; };
+		964996221EC0610F007F81E3 /* TXScrollLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXScrollLabelView.h; sourceTree = "<group>"; };
+		964996231EC0610F007F81E3 /* TXScrollLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXScrollLabelView.m; sourceTree = "<group>"; };
+		964996251EC0611A007F81E3 /* UIView+TXFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TXFrame.h"; sourceTree = "<group>"; };
+		964996261EC0611A007F81E3 /* UIView+TXFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TXFrame.m"; sourceTree = "<group>"; };
+		964996281EC07105007F81E3 /* TCDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDefine.h; sourceTree = "<group>"; };
 		96D131651EBFFE3700B3A575 /* TCRedPocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCRedPocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D131691EBFFE3700B3A575 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96D1316B1EBFFE3700B3A575 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -36,6 +51,10 @@
 		96D131821EBFFF3000B3A575 /* TCRedPocketVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRedPocketVC.m; sourceTree = "<group>"; };
 		96D131841EBFFFAA00B3A575 /* UIViewController+tc_HideNavgationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+tc_HideNavgationBar.h"; sourceTree = "<group>"; };
 		96D131851EBFFFAA00B3A575 /* UIViewController+tc_HideNavgationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+tc_HideNavgationBar.m"; sourceTree = "<group>"; };
+		96D131871EC003AD00B3A575 /* TCRedListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRedListView.h; sourceTree = "<group>"; };
+		96D131881EC003AD00B3A575 /* TCRedListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRedListView.m; sourceTree = "<group>"; };
+		96D1318A1EC005FC00B3A575 /* TCRedPocketDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRedPocketDetailView.h; sourceTree = "<group>"; };
+		96D1318B1EC005FC00B3A575 /* TCRedPocketDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRedPocketDetailView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,10 +132,23 @@
 		96D131801EBFFF1400B3A575 /* TCRedPocket */ = {
 			isa = PBXGroup;
 			children = (
+				964996281EC07105007F81E3 /* TCDefine.h */,
 				96D131811EBFFF3000B3A575 /* TCRedPocketVC.h */,
 				96D131821EBFFF3000B3A575 /* TCRedPocketVC.m */,
+				9649961C1EC03BA2007F81E3 /* TCRedPocketTopView.h */,
+				9649961D1EC03BA2007F81E3 /* TCRedPocketTopView.m */,
+				9649961F1EC03BAF007F81E3 /* TCRedPocketFooterView.h */,
+				964996201EC03BAF007F81E3 /* TCRedPocketFooterView.m */,
+				96D131871EC003AD00B3A575 /* TCRedListView.h */,
+				96D131881EC003AD00B3A575 /* TCRedListView.m */,
 				96D131841EBFFFAA00B3A575 /* UIViewController+tc_HideNavgationBar.h */,
 				96D131851EBFFFAA00B3A575 /* UIViewController+tc_HideNavgationBar.m */,
+				96D1318A1EC005FC00B3A575 /* TCRedPocketDetailView.h */,
+				96D1318B1EC005FC00B3A575 /* TCRedPocketDetailView.m */,
+				964996221EC0610F007F81E3 /* TXScrollLabelView.h */,
+				964996231EC0610F007F81E3 /* TXScrollLabelView.m */,
+				964996251EC0611A007F81E3 /* UIView+TXFrame.h */,
+				964996261EC0611A007F81E3 /* UIView+TXFrame.m */,
 			);
 			path = TCRedPocket;
 			sourceTree = "<group>";
@@ -245,9 +277,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				96D131861EBFFFAA00B3A575 /* UIViewController+tc_HideNavgationBar.m in Sources */,
+				96D131891EC003AD00B3A575 /* TCRedListView.m in Sources */,
+				964996241EC0610F007F81E3 /* TXScrollLabelView.m in Sources */,
 				96D131701EBFFE3700B3A575 /* ViewController.m in Sources */,
 				96D1316D1EBFFE3700B3A575 /* AppDelegate.m in Sources */,
+				964996211EC03BAF007F81E3 /* TCRedPocketFooterView.m in Sources */,
+				96D1318C1EC005FC00B3A575 /* TCRedPocketDetailView.m in Sources */,
+				9649961E1EC03BA2007F81E3 /* TCRedPocketTopView.m in Sources */,
 				96D1316A1EBFFE3700B3A575 /* main.m in Sources */,
+				964996271EC0611A007F81E3 /* UIView+TXFrame.m in Sources */,
 				96D131831EBFFF3000B3A575 /* TCRedPocketVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

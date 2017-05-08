@@ -21,13 +21,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awD-WC-nnz">
-                                <rect key="frame" x="137" y="308.5" width="100" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awD-WC-nnz">
+                                <rect key="frame" x="279" y="522" width="87" height="82"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="R2H-Js-kyd"/>
-                                    <constraint firstAttribute="height" constant="50" id="aGL-hH-3uj"/>
+                                    <constraint firstAttribute="height" constant="82" id="23R-qc-s3O"/>
+                                    <constraint firstAttribute="width" constant="87" id="5BH-Qf-8Sw"/>
                                 </constraints>
-                                <state key="normal" title="跳转"/>
+                                <state key="normal" title="跳转" image="RP_Qiang"/>
                                 <connections>
                                     <action selector="pushToRedPocketVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tYJ-MF-oMW"/>
                                 </connections>
@@ -35,8 +35,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="awD-WC-nnz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LKQ-8M-xIZ"/>
-                            <constraint firstItem="awD-WC-nnz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z5Q-56-tuU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="awD-WC-nnz" secondAttribute="bottom" constant="63" id="ftd-xp-Omd"/>
+                            <constraint firstAttribute="trailing" secondItem="awD-WC-nnz" secondAttribute="trailing" constant="9" id="oD4-cX-YeH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GQ1-so-m3f"/>
@@ -64,4 +64,7 @@
             <point key="canvasLocation" x="144.80000000000001" y="-645.42728635682158"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RP_Qiang" width="87" height="82"/>
+    </resources>
 </document>
