@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55A9E5EFC0C8728F19DB2337 /* libPods-TCRedPocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 714ECD545AE4426F135A3A91 /* libPods-TCRedPocket.a */; };
+		96D1316A1EBFFE3700B3A575 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D131691EBFFE3700B3A575 /* main.m */; };
+		96D1316D1EBFFE3700B3A575 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D1316C1EBFFE3700B3A575 /* AppDelegate.m */; };
+		96D131701EBFFE3700B3A575 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D1316F1EBFFE3700B3A575 /* ViewController.m */; };
+		96D131731EBFFE3700B3A575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96D131711EBFFE3700B3A575 /* Main.storyboard */; };
+		96D131751EBFFE3700B3A575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D131741EBFFE3700B3A575 /* Assets.xcassets */; };
+		96D131781EBFFE3700B3A575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96D131761EBFFE3700B3A575 /* LaunchScreen.storyboard */; };
+		96D131831EBFFF3000B3A575 /* TCRedPocketVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D131821EBFFF3000B3A575 /* TCRedPocketVC.m */; };
+		96D131861EBFFFAA00B3A575 /* UIViewController+tc_HideNavgationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D131851EBFFFAA00B3A575 /* UIViewController+tc_HideNavgationBar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63710C836A0B7A243A01C5B5 /* Pods-TCRedPocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCRedPocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCRedPocket/Pods-TCRedPocket.release.xcconfig"; sourceTree = "<group>"; };
+		714ECD545AE4426F135A3A91 /* libPods-TCRedPocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCRedPocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		932D8E608DFC5F2FB3CCFA78 /* Pods-TCRedPocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCRedPocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCRedPocket/Pods-TCRedPocket.debug.xcconfig"; sourceTree = "<group>"; };
+		96D131651EBFFE3700B3A575 /* TCRedPocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCRedPocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96D131691EBFFE3700B3A575 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96D1316B1EBFFE3700B3A575 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		96D1316C1EBFFE3700B3A575 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		96D1316E1EBFFE3700B3A575 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		96D1316F1EBFFE3700B3A575 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		96D131721EBFFE3700B3A575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96D131741EBFFE3700B3A575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96D131771EBFFE3700B3A575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96D131791EBFFE3700B3A575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96D131811EBFFF3000B3A575 /* TCRedPocketVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRedPocketVC.h; sourceTree = "<group>"; };
+		96D131821EBFFF3000B3A575 /* TCRedPocketVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRedPocketVC.m; sourceTree = "<group>"; };
+		96D131841EBFFFAA00B3A575 /* UIViewController+tc_HideNavgationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+tc_HideNavgationBar.h"; sourceTree = "<group>"; };
+		96D131851EBFFFAA00B3A575 /* UIViewController+tc_HideNavgationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+tc_HideNavgationBar.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96D131621EBFFE3700B3A575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A9E5EFC0C8728F19DB2337 /* libPods-TCRedPocket.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69E11DB5545E8CA7865F5554 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				714ECD545AE4426F135A3A91 /* libPods-TCRedPocket.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83D54B09B4F2F13D517A8062 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				932D8E608DFC5F2FB3CCFA78 /* Pods-TCRedPocket.debug.xcconfig */,
+				63710C836A0B7A243A01C5B5 /* Pods-TCRedPocket.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		96D1315C1EBFFE3700B3A575 = {
+			isa = PBXGroup;
+			children = (
+				96D131671EBFFE3700B3A575 /* TCRedPocket */,
+				96D131661EBFFE3700B3A575 /* Products */,
+				83D54B09B4F2F13D517A8062 /* Pods */,
+				69E11DB5545E8CA7865F5554 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		96D131661EBFFE3700B3A575 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96D131651EBFFE3700B3A575 /* TCRedPocket.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96D131671EBFFE3700B3A575 /* TCRedPocket */ = {
+			isa = PBXGroup;
+			children = (
+				96D131801EBFFF1400B3A575 /* TCRedPocket */,
+				96D1316B1EBFFE3700B3A575 /* AppDelegate.h */,
+				96D1316C1EBFFE3700B3A575 /* AppDelegate.m */,
+				96D1316E1EBFFE3700B3A575 /* ViewController.h */,
+				96D1316F1EBFFE3700B3A575 /* ViewController.m */,
+				96D131711EBFFE3700B3A575 /* Main.storyboard */,
+				96D131741EBFFE3700B3A575 /* Assets.xcassets */,
+				96D131761EBFFE3700B3A575 /* LaunchScreen.storyboard */,
+				96D131791EBFFE3700B3A575 /* Info.plist */,
+				96D131681EBFFE3700B3A575 /* Supporting Files */,
+			);
+			path = TCRedPocket;
+			sourceTree = "<group>";
+		};
+		96D131681EBFFE3700B3A575 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96D131691EBFFE3700B3A575 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96D131801EBFFF1400B3A575 /* TCRedPocket */ = {
+			isa = PBXGroup;
+			children = (
+				96D131811EBFFF3000B3A575 /* TCRedPocketVC.h */,
+				96D131821EBFFF3000B3A575 /* TCRedPocketVC.m */,
+				96D131841EBFFFAA00B3A575 /* UIViewController+tc_HideNavgationBar.h */,
+				96D131851EBFFFAA00B3A575 /* UIViewController+tc_HideNavgationBar.m */,
+			);
+			path = TCRedPocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96D131641EBFFE3700B3A575 /* TCRedPocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96D1317C1EBFFE3700B3A575 /* Build configuration list for PBXNativeTarget "TCRedPocket" */;
+			buildPhases = (
+				C7B329A15378EB92321A38F8 /* [CP] Check Pods Manifest.lock */,
+				96D131611EBFFE3700B3A575 /* Sources */,
+				96D131621EBFFE3700B3A575 /* Frameworks */,
+				96D131631EBFFE3700B3A575 /* Resources */,
+				C5C7DE8C0C439E906699B052 /* [CP] Embed Pods Frameworks */,
+				26E08B5023F25339E8657E0A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCRedPocket;
+			productName = TCRedPocket;
+			productReference = 96D131651EBFFE3700B3A575 /* TCRedPocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96D1315D1EBFFE3700B3A575 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = TCBeta;
+				TargetAttributes = {
+					96D131641EBFFE3700B3A575 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = X9EJ7HR3QF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 96D131601EBFFE3700B3A575 /* Build configuration list for PBXProject "TCRedPocket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96D1315C1EBFFE3700B3A575;
+			productRefGroup = 96D131661EBFFE3700B3A575 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96D131641EBFFE3700B3A575 /* TCRedPocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96D131631EBFFE3700B3A575 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D131781EBFFE3700B3A575 /* LaunchScreen.storyboard in Resources */,
+				96D131751EBFFE3700B3A575 /* Assets.xcassets in Resources */,
+				96D131731EBFFE3700B3A575 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26E08B5023F25339E8657E0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCRedPocket/Pods-TCRedPocket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C7DE8C0C439E906699B052 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCRedPocket/Pods-TCRedPocket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7B329A15378EB92321A38F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96D131611EBFFE3700B3A575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D131861EBFFFAA00B3A575 /* UIViewController+tc_HideNavgationBar.m in Sources */,
+				96D131701EBFFE3700B3A575 /* ViewController.m in Sources */,
+				96D1316D1EBFFE3700B3A575 /* AppDelegate.m in Sources */,
+				96D1316A1EBFFE3700B3A575 /* main.m in Sources */,
+				96D131831EBFFF3000B3A575 /* TCRedPocketVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96D131711EBFFE3700B3A575 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96D131721EBFFE3700B3A575 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96D131761EBFFE3700B3A575 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96D131771EBFFE3700B3A575 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96D1317A1EBFFE3700B3A575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		96D1317B1EBFFE3700B3A575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96D1317D1EBFFE3700B3A575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 932D8E608DFC5F2FB3CCFA78 /* Pods-TCRedPocket.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X9EJ7HR3QF;
+				INFOPLIST_FILE = TCRedPocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tcbeta.TCRedPocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		96D1317E1EBFFE3700B3A575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63710C836A0B7A243A01C5B5 /* Pods-TCRedPocket.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X9EJ7HR3QF;
+				INFOPLIST_FILE = TCRedPocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tcbeta.TCRedPocket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96D131601EBFFE3700B3A575 /* Build configuration list for PBXProject "TCRedPocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96D1317A1EBFFE3700B3A575 /* Debug */,
+				96D1317B1EBFFE3700B3A575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96D1317C1EBFFE3700B3A575 /* Build configuration list for PBXNativeTarget "TCRedPocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96D1317D1EBFFE3700B3A575 /* Debug */,
+				96D1317E1EBFFE3700B3A575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96D1315D1EBFFE3700B3A575 /* Project object */;
+}

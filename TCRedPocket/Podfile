@@ -1,0 +1,9 @@
+inhibit_all_warnings!
+platform:ios,'8.0'
+
+target 'TCRedPocket' do
+pod 'Masonry'
+
+end
+
+
