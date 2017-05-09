@@ -23,6 +23,8 @@
 
 @property (nonatomic,copy) TCParas0Callback becomeVIPBtnActionCallback;
 
+@property (nonatomic,assign) CGPoint fromPoint;
+
 @end
 
 @implementation TCRedPocketDetailView
@@ -251,28 +253,52 @@
 
 //关闭button
 -(void)closeBtnAction:(UIButton *)btn{
-    [self removeFromSuperview];
+    //消失动画
+    //1.frame size from 1 to 0
+    //2.center point change
+    self.contentView.alpha = 1.0;
+    self.closeBtn.alpha = 1.0;
+    self.darkView.alpha = 1.0;
+    
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        self.contentView.alpha = 0.0;
+        self.closeBtn.alpha = 0.0;
+        self.darkView.alpha = 0.0;
+        self.contentView.transform = CGAffineTransformMakeScale(0.01, 0.01);
+        self.contentView.center = self.fromPoint;
+        
+    } completion:^(BOOL finished) {
+        [self removeFromSuperview];
+    }];
+    
 }
 
 #pragma mark Public Method
 -(void)showWithPoint:(CGPoint)point{
+    
+    self.fromPoint = point;
+    
     self.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     [[UIApplication sharedApplication].keyWindow addSubview:self];
     
     //显示动画
-    CGRect toRect = self.contentView.frame;
+    //1.frame size 从0到1
+    //2.center point 变更
+    self.contentView.transform = CGAffineTransformMakeScale(0.01, 0.01);
     self.contentView.center = point;
-    self.contentView.transform = CGAffineTransformMakeScale(0, 0);
     self.contentView.alpha = 0.0;
     self.closeBtn.alpha = 0.0;
     self.darkView.alpha = 0.0;
     
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:0.3 animations:^{
         self.contentView.transform = CGAffineTransformIdentity;
-        self.contentView.frame = toRect;
+        self.contentView.center = CGPointMake(kScreenWidth/2.0, kScreenHeight/2.0);
+        
         self.closeBtn.alpha = 1.0f;
         self.darkView.alpha = 1.0f;
         self.contentView.alpha = 1.0f;
+        
     } completion:^(BOOL finished) {
 
     }];

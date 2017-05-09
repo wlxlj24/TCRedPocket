@@ -40,6 +40,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GQ1-so-m3f"/>
+                    <connections>
+                        <outlet property="redpocketBtn" destination="awD-WC-nnz" id="LtZ-QG-eoP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

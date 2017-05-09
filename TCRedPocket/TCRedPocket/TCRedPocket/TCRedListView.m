@@ -94,9 +94,7 @@
 
 //红包点击事件
 -(void)redpocketBtnAciton:(UIButton *)btn{
-    //动画效果 放大
-    CGPoint point = [btn convertPoint:btn.center toView:[UIApplication sharedApplication].keyWindow];
-    self.cellBtnActionCallback([NSString stringWithFormat:@"%ld",(long)btn.tag],NSStringFromCGPoint(point));
+    self.cellBtnActionCallback([NSString stringWithFormat:@"%ld",(long)btn.tag],NSStringFromCGPoint(btn.superview.center));
 }
 
 -(void)setupRedpocketCellBtnAction:(TCParas2Callback)callback{

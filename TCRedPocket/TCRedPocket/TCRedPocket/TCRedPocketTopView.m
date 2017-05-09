@@ -12,6 +12,7 @@
 @interface TCRedPocketTopView ()
 
 @property (nonatomic,strong) UILabel *moneyLbl;
+@property (nonatomic,copy) TCParas0Callback leftNavBtnActionCallback;
 
 @end
 
@@ -30,16 +31,6 @@
 -(void)setupViews{
     
     self.backgroundColor = [UIColor colorWithRed:0.882 green:0.271 blue:0.271 alpha:1];
-    
-    UIButton *leftNavBtn = [UIButton new];
-    [leftNavBtn setImage:[UIImage imageNamed:@"RP_Back"] forState:UIControlStateNormal];
-    [self addSubview:leftNavBtn];
-    [leftNavBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(@30);
-        make.width.mas_equalTo(@30);
-        make.left.mas_equalTo(self.mas_left).offset(8);
-        make.top.mas_equalTo(self.mas_top).offset(26);
-    }];
     
     UIImageView *bgIV = [UIImageView new];
     bgIV.image = [UIImage imageNamed:@"RP_TopBackground"];
@@ -77,8 +68,27 @@
         make.bottom.mas_equalTo(self.moneyLbl.mas_top).offset(4);
     }];
     
+    UIButton *leftNavBtn = [UIButton new];
+    [leftNavBtn setImage:[UIImage imageNamed:@"RP_Back"] forState:UIControlStateNormal];
+    [leftNavBtn addTarget:self action:@selector(leftNavBtnAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:leftNavBtn];
+    [leftNavBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(@30);
+        make.width.mas_equalTo(@30);
+        make.left.mas_equalTo(self.mas_left).offset(8);
+        make.top.mas_equalTo(self.mas_top).offset(26);
+    }];
+    
 }
 
+-(void)leftNavBtnAction:(UIButton *)btn{
+    if (self.leftNavBtnActionCallback) {
+        self.leftNavBtnActionCallback();
+    }
+}
 
+-(void)setupActionOfLeftNavBtnAction:(TCParas0Callback)callback{
+    self.leftNavBtnActionCallback = callback;
+}
 
 @end

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		55A9E5EFC0C8728F19DB2337 /* libPods-TCRedPocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 714ECD545AE4426F135A3A91 /* libPods-TCRedPocket.a */; };
+		96285E841EC14B540027A8E3 /* TCRedPocketInteractiveAnimatedTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 96285E831EC14B540027A8E3 /* TCRedPocketInteractiveAnimatedTransition.m */; };
+		96285E871EC14E1F0027A8E3 /* TCRedPocketPushAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 96285E861EC14E1F0027A8E3 /* TCRedPocketPushAnimator.m */; };
+		96285E8A1EC14E2E0027A8E3 /* TCRedPocketPopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 96285E891EC14E2E0027A8E3 /* TCRedPocketPopAnimator.m */; };
 		9649961E1EC03BA2007F81E3 /* TCRedPocketTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9649961D1EC03BA2007F81E3 /* TCRedPocketTopView.m */; };
 		964996211EC03BAF007F81E3 /* TCRedPocketFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 964996201EC03BAF007F81E3 /* TCRedPocketFooterView.m */; };
 		964996241EC0610F007F81E3 /* TXScrollLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 964996231EC0610F007F81E3 /* TXScrollLabelView.m */; };
@@ -28,6 +31,12 @@
 		63710C836A0B7A243A01C5B5 /* Pods-TCRedPocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCRedPocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCRedPocket/Pods-TCRedPocket.release.xcconfig"; sourceTree = "<group>"; };
 		714ECD545AE4426F135A3A91 /* libPods-TCRedPocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCRedPocket.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		932D8E608DFC5F2FB3CCFA78 /* Pods-TCRedPocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCRedPocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCRedPocket/Pods-TCRedPocket.debug.xcconfig"; sourceTree = "<group>"; };
+		96285E821EC14B540027A8E3 /* TCRedPocketInteractiveAnimatedTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRedPocketInteractiveAnimatedTransition.h; sourceTree = "<group>"; };
+		96285E831EC14B540027A8E3 /* TCRedPocketInteractiveAnimatedTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRedPocketInteractiveAnimatedTransition.m; sourceTree = "<group>"; };
+		96285E851EC14E1F0027A8E3 /* TCRedPocketPushAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRedPocketPushAnimator.h; sourceTree = "<group>"; };
+		96285E861EC14E1F0027A8E3 /* TCRedPocketPushAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRedPocketPushAnimator.m; sourceTree = "<group>"; };
+		96285E881EC14E2E0027A8E3 /* TCRedPocketPopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRedPocketPopAnimator.h; sourceTree = "<group>"; };
+		96285E891EC14E2E0027A8E3 /* TCRedPocketPopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRedPocketPopAnimator.m; sourceTree = "<group>"; };
 		9649961C1EC03BA2007F81E3 /* TCRedPocketTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRedPocketTopView.h; sourceTree = "<group>"; };
 		9649961D1EC03BA2007F81E3 /* TCRedPocketTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRedPocketTopView.m; sourceTree = "<group>"; };
 		9649961F1EC03BAF007F81E3 /* TCRedPocketFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRedPocketFooterView.h; sourceTree = "<group>"; };
@@ -86,6 +95,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		961213801EC0975800D3A23C /* Transform */ = {
+			isa = PBXGroup;
+			children = (
+				96285E821EC14B540027A8E3 /* TCRedPocketInteractiveAnimatedTransition.h */,
+				96285E831EC14B540027A8E3 /* TCRedPocketInteractiveAnimatedTransition.m */,
+				96285E851EC14E1F0027A8E3 /* TCRedPocketPushAnimator.h */,
+				96285E861EC14E1F0027A8E3 /* TCRedPocketPushAnimator.m */,
+				96285E881EC14E2E0027A8E3 /* TCRedPocketPopAnimator.h */,
+				96285E891EC14E2E0027A8E3 /* TCRedPocketPopAnimator.m */,
+			);
+			name = Transform;
+			sourceTree = "<group>";
+		};
 		96D1315C1EBFFE3700B3A575 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +154,7 @@
 		96D131801EBFFF1400B3A575 /* TCRedPocket */ = {
 			isa = PBXGroup;
 			children = (
+				961213801EC0975800D3A23C /* Transform */,
 				964996281EC07105007F81E3 /* TCDefine.h */,
 				96D131811EBFFF3000B3A575 /* TCRedPocketVC.h */,
 				96D131821EBFFF3000B3A575 /* TCRedPocketVC.m */,
@@ -277,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96D131861EBFFFAA00B3A575 /* UIViewController+tc_HideNavgationBar.m in Sources */,
+				96285E871EC14E1F0027A8E3 /* TCRedPocketPushAnimator.m in Sources */,
 				96D131891EC003AD00B3A575 /* TCRedListView.m in Sources */,
 				964996241EC0610F007F81E3 /* TXScrollLabelView.m in Sources */,
 				96D131701EBFFE3700B3A575 /* ViewController.m in Sources */,
@@ -284,7 +308,9 @@
 				964996211EC03BAF007F81E3 /* TCRedPocketFooterView.m in Sources */,
 				96D1318C1EC005FC00B3A575 /* TCRedPocketDetailView.m in Sources */,
 				9649961E1EC03BA2007F81E3 /* TCRedPocketTopView.m in Sources */,
+				96285E8A1EC14E2E0027A8E3 /* TCRedPocketPopAnimator.m in Sources */,
 				96D1316A1EBFFE3700B3A575 /* main.m in Sources */,
+				96285E841EC14B540027A8E3 /* TCRedPocketInteractiveAnimatedTransition.m in Sources */,
 				964996271EC0611A007F81E3 /* UIView+TXFrame.m in Sources */,
 				96D131831EBFFF3000B3A575 /* TCRedPocketVC.m in Sources */,
 			);

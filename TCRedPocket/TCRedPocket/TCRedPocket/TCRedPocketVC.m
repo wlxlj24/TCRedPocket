@@ -117,19 +117,39 @@
     @weakify(self);
     [self.redListView setupRedpocketCellBtnAction:^(NSString *index, NSString *centerPoint) {
         CGPoint point = CGPointFromString(centerPoint);
-        [weak_self showRedpocketDetailViewWithCenter:point];
+        [weak_self showRedpocketDetailViewWithCenter:[self handleCellCenter:point]];
         
     }];
+    
+    [self.topView setupActionOfLeftNavBtnAction:^{
+        [weak_self.navigationController popViewControllerAnimated:YES];
+    }];
+    
 }
+
+
+-(CGPoint)handleCellCenter:(CGPoint)center{
+    CGFloat x = center.x;
+    CGFloat y = center.y;
+    
+    x = x+self.contentView.tx_x+self.redListView.tx_x;
+    y = y+self.contentView.tx_y+self.redListView.tx_y;
+    
+    return CGPointMake(x, y);
+    
+}
+
 
 -(void)showRedpocketDetailViewWithCenter:(CGPoint)center{
     TCRedPocketDetailView *redpocket = [[TCRedPocketDetailView alloc] initWithType:random()%3];
     [redpocket showWithPoint:center];
     
+    
     [redpocket setupActionOfBecomeVIP:^{
-        //跳转到充值VIP页面
+        
         
     }];
+    
 }
 
 #pragma mark - Private Methods
@@ -201,6 +221,8 @@
 - (void)scrollLabelView:(TXScrollLabelView *)scrollLabelView didClickWithText:(NSString *)text atIndex:(NSInteger)index{
     NSLog(@"%@--%ld",text, index);
 }
+
+
 
 
 @end

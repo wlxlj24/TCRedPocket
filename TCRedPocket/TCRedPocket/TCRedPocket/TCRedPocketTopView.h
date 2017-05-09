@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TCDefine.h"
 
 @interface TCRedPocketTopView : UIView
+
+-(void)setupActionOfLeftNavBtnAction:(TCParas0Callback)callback;
 
 @end
