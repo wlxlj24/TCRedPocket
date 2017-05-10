@@ -7,5 +7,5 @@ dependencies: \
   /Users/TailC/Code/Work/Demo/TCRedPocket/TCRedPocket/TCRedPocket/TCRedPocket/TCRedPocketDetailView.h \
   /Users/TailC/Code/Work/Demo/TCRedPocket/TCRedPocket/TCRedPocket/TCRedPocket/TCRedPocketFooterView.h \
   /Users/TailC/Code/Work/Demo/TCRedPocket/TCRedPocket/TCRedPocket/TCRedPocket/TCRedPocketTopView.h \
-  /Users/TailC/Code/Work/Demo/TCRedPocket/TCRedPocket/TCRedPocket/TCRedPocket/TXScrollLabelView.h \
-  /Users/TailC/Code/Work/Demo/TCRedPocket/TCRedPocket/TCRedPocket/TCRedPocket/UIView+TXFrame.h
+  /Users/TailC/Code/Work/Demo/TCRedPocket/TCRedPocket/TCRedPocket/TCRedPocket/UIView+TXFrame.h \
+  /Users/TailC/Code/Work/Demo/TCRedPocket/TCRedPocket/TCRedPocket/TCRedPocket/TCRedpocketScrollView.h

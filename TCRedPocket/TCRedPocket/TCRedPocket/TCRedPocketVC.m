@@ -13,7 +13,8 @@
 #import "TCRedPocketDetailView.h"
 #import "TCRedPocketFooterView.h"
 #import "TCRedPocketTopView.h"
-#import "TXScrollLabelView.h"
+#import "UIView+TXFrame.h"
+#import "TCRedpocketScrollView.h"
 
 @interface TCRedPocketVC ()
 
@@ -23,7 +24,7 @@
 
 @property (nonatomic,strong) TCRedListView *redListView;
 @property (nonatomic,strong) TCRedPocketDetailView *rpDetailView;
-@property (nonatomic,strong) TXScrollLabelView *scollLabelView;
+@property (nonatomic,strong) TCRedpocketScrollView *scollLabelView;
 
 @end
 
@@ -196,31 +197,23 @@
 }
 
 
-- (TXScrollLabelView *)scollLabelView {
+- (TCRedpocketScrollView *)scollLabelView {
 	if (_scollLabelView == nil) {
-        NSArray *scrollTexts = @[@"[女王大人] 领取了2.78元 \n [女王大对对对人] 领取了2.78元 \n [女王大重中之重人] 领取了2.78元",];
-        _scollLabelView = [TXScrollLabelView scrollWithTextArray:scrollTexts type:TXScrollLabelViewTypeUpDown velocity:2 options:UIViewAnimationOptionCurveEaseInOut inset:UIEdgeInsetsZero];
-        _scollLabelView.backgroundColor = [UIColor colorWithRed:0.800 green:0.224 blue:0.259 alpha:1];
-        _scollLabelView.tx_centerX  = [UIScreen mainScreen].bounds.size.width * 0.5;
-        _scollLabelView.scrollInset = UIEdgeInsetsMake(0, 10 , 0, 10);
-        _scollLabelView.scrollSpace = 10;
-        _scollLabelView.font = [UIFont systemFontOfSize:15];
-        _scollLabelView.textAlignment = NSTextAlignmentLeft;
+        CGFloat width = kScreenWidth - 26;
+        CGFloat height = kScreenHeight - width * 0.55  - width * 345.0/351.0 - width * 0.12;
         
-        CGFloat width = [UIScreen mainScreen].bounds.size.width-26;
-        CGFloat height = [UIScreen mainScreen].bounds.size.height - width * 0.55  - width * 345.0/351.0 - width * 0.12;
-        CGFloat yy = width * 345.0/351.0;
-        
-        _scollLabelView.frame = CGRectMake(0, yy, width, height);
-        [_scollLabelView beginScrolling];
+        _scollLabelView = [[TCRedpocketScrollView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
+        NSMutableArray *mArr = [NSMutableArray new];
+        for (int i = 0; i < 100; i++) {
+            [mArr addObject:@"XXX领取了XX元"];
+        }
+        _scollLabelView.dataArray = mArr;
+    
         
 	}
 	return _scollLabelView;
 }
 
-- (void)scrollLabelView:(TXScrollLabelView *)scrollLabelView didClickWithText:(NSString *)text atIndex:(NSInteger)index{
-    NSLog(@"%@--%ld",text, index);
-}
 
 
 
